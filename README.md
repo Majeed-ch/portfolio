@@ -1,5 +1,7 @@
 # Dopefolio 🔥
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f727e0b8-f5a3-41f1-a5b3-354206cbed22/deploy-status)](https://app.netlify.com/sites/majeed-ch/deploys)
+
 ## A Blazing Fast Multipage Portfolio Template for Developers 🚀
 
 ## [Demo Link](https://dopefolio.netlify.app) 🔗
