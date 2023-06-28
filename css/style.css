@@ -246,6 +246,14 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
+  .home-hero__resume_cta {
+    display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .home-hero__resume_cta {
+        display: block;
+        margin-top: 2rem;
+        text-align: center; } }
+        
 .about {
   background: #fafafa; }
   .about__content {
