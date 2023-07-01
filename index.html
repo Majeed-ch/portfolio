@@ -323,7 +323,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form name="contact" method="post" class="contact__form" action="./#contact" data-netlify="true">
+          <form name="contact" method="post" class="contact__form" data-netlify="true">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -434,5 +434,25 @@
     <!-- END FOOTER SECTION-->
 
     <script src="./index.js"></script>
+    <script>
+      document
+        .querySelector(".contact__form")
+        .addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => alert("Thank you for your message"))
+          .catch((error) => alert(error));
+      };
+    </script>
   </body>
 </html>
