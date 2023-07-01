@@ -227,10 +227,10 @@
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
+          <!-- <span class="heading-sec__sub">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
             tempora explicabo quae quod deserunt eius sapiente
-          </span>
+          </span> -->
         </h2>
 
         <div class="projects__content">
@@ -244,17 +244,28 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
+              <h3 class="projects__row-content-title">Recipes App</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                This Android application built with Java and utilizing SQLite for data storage.
+                The app allows users to easily search for meal recipes based on various cuisines, using the MealDB API.
+                With a user-friendly interface, the app provides a seamless experience for browsing and exploring recipes.
+                <br/>
+                Key functionalities implemented include a cuisine search feature, detailed recipe view to showcase ingredients and instructions, 
+                and the ability to save favorite recipes to a personalized favorites list. 
+                <br/>
+                I enjoyed developing this app with a small team, learned a lot about mobile development, and polished my GIT skill.
               </p>
+              <div class="skills">
+                <div class="skills__skill">Java</div>
+                <div class="skills__skill">SQLite</div>
+                <div class="skills__skill">XML</div>
+                <div class="skills__skill">Android Studio</div>
+              </div>
               <a
-                href="./project-1.html"
+                href="https://github.com/Majeed-ch/RecipeApp"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Case Study</a
+                >Source Code</a
               >
             </div>
           </div>
@@ -268,18 +279,29 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
+              <h3 class="projects__row-content-title">Games List web-app</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                I designed and developed a Games Tracker web application to test my skills in PHP and my knowlede in CRUD opirations.
+                <br/>
+                The application comprises multiple web pages that enable users to create, view, update, and delete game records.
+                Leveraging my skills, I created a visually appealing and user-friendly interface.
+                <br/>
+                This project was a fun way to test my skills learned in college, and was helpful when I had to keep track of games
+                I'm playing or waiting for it to release.
               </p>
+              <div class="skills">
+                <div class="skills__skill">PHP</div>
+                <div class="skills__skill">MySQL</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">CSS</div>
+              </div>
               <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
+              href="https://github.com/Majeed-ch/Games-Tracker"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Source Code</a
+              >              
             </div>
           </div>
           <div class="projects__row">
@@ -434,25 +456,5 @@
     <!-- END FOOTER SECTION-->
 
     <script src="./index.js"></script>
-    <script>
-      document
-        .querySelector(".contact__form")
-        .addEventListener("submit", handleSubmit);
-
-      const handleSubmit = (event) => {
-        event.preventDefault();
-
-        const myForm = event.target;
-        const formData = new FormData(myForm);
-        
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => alert("Thank you for your message"))
-          .catch((error) => alert(error));
-      };
-    </script>
   </body>
 </html>
