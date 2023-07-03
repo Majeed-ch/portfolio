@@ -303,7 +303,8 @@ textarea {
     max-height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 25px; }
   .projects__row-img {
     display: block;
     object-fit: contain;
@@ -335,13 +336,6 @@ textarea {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
 
-.shadow-box {
-  box-shadow: 0px 0.5rem 2rem black;
-  border-radius: 5px; }
-  @media only screen and (max-width: 56.25em) {
-    .shadow-box {
-      box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.5); } }
-
 .phone-project-img {
   width: 236px;
   height: 500px;
@@ -349,6 +343,14 @@ textarea {
   box-shadow: 0px 0.5rem 2rem black; }
   @media only screen and (max-width: 56.25em) {
     .phone-project-img {
+      box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.5); } }
+
+.laptop-project-img {
+  width: 600px;
+  border-radius: 2.7rem 2.7rem 1rem 1rem;
+  box-shadow: 0px 0.5rem 2rem black; }
+  @media only screen and (max-width: 56.25em) {
+    .laptop-project-img {
       box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.5); } }
 
 .contact {
