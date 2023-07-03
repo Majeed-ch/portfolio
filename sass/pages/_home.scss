@@ -211,6 +211,17 @@
   }
 }
 
+.phone-project-img {
+  width: 236px;
+  height: 500px;
+  border-radius: 3rem;
+  box-shadow: 0px 0.5rem 2rem  rgb(0, 0, 0);
+
+  @include respond(tab-port) {
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.500);
+  }
+}
+
 .contact {
   background: linear-gradient(
       to right,
